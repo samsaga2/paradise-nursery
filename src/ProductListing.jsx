@@ -1,7 +1,7 @@
 import './ProductListing.css'
 import { useSelector, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
 import { incrementQuantity } from "./itemsSlice";
+import Navbar from './Navbar'
 
 function ProductListing() {
   const items = useSelector((state) => state.items);
@@ -16,10 +16,6 @@ function ProductListing() {
     return acc;
   }, {});
 
-  const totalItems = items.reduce((total, item) => {
-    return total + item.quantity;
-  }, 0);
-
   const handleAddToCart = (key, index) => {
     const item = groupedItems[key][index];
     const item_index = items.indexOf(item);
@@ -28,13 +24,7 @@ function ProductListing() {
 
   return (
     <>
-      <nav className="navbar">
-        <div><Link to="/">Paradise Nursery</Link></div>
-        <div>Plants</div>
-        <div className="cart">
-          <Link to="/cart">{totalItems}</Link>
-        </div>
-      </nav>
+      <Navbar />
       <div className="groups">
         {Object.keys(groupedItems).map(key => (
           <div className="group" key={key}>

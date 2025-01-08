@@ -10,12 +10,13 @@
   }
 
   .cart_product {
+    margin: 1rem;
     padding: 1rem;
     width: 20rem;
     height: 12rem;
-    border: 1px solid rgb(99, 99, 99);
+    border: 1px solid #aa8b78;
     border-radius: 5px;
-    background-color: rgb(51, 51, 51);
+    background-color: #f5e8e0;
     font-size: 15px;
     font-weight: normal;
     text-align: center;
@@ -34,6 +35,8 @@
 
     .delete {
       background-color: red;
+      border: 1px solid rgb(180, 0, 0);
+      color: white;
     }
   }
 }
@@ -44,8 +47,12 @@
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 
   button {
     width: 60vw;
+    color: white;
+    background-color: green;
+    border: 1px solid rgb(1, 66, 1);
   }
 }

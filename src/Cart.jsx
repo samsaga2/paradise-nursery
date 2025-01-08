@@ -2,6 +2,7 @@ import './Cart.css'
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { incrementQuantity, decrementQuantity, resetQuantity } from "./itemsSlice";
+import Navbar from './Navbar'
 
 function Cart() {
   const items = useSelector((state) => state.items);
@@ -42,11 +43,7 @@ function Cart() {
 
   return (
     <>
-      <nav className="navbar">
-        <div><Link to="/">Paradise Nursery</Link></div>
-        <div>Plants</div>
-        <div className="cart">{totalItems}</div>
-      </nav>
+      <Navbar />
       <div className="cart_groups">
         {Object.keys(groupedItems).map(key => (
           <div className="cart_group" key={key}>
