@@ -1,4 +1,5 @@
 import './Landing.css'
+import { Link } from "react-router-dom";
 
 function Landing() {
   return (
@@ -7,7 +8,9 @@ function Landing() {
         <div className="main_event">
           <h1>Welcome To Paradise Nursery</h1>
           <p>Where Green Meets Serenity</p>
-          <button>Get Started</button>
+          <Link to="/products">
+            <button>Get Started</button>
+          </Link>
         </div>
         <div className="aboutus">
           <p className="title">Welcome to Paradise Nursery: Your Green Oasis Awaits</p>
