@@ -135,9 +135,13 @@ export const itemsSlice = createSlice({
         state[index].quantity--;
       }
     },
+    resetQuantity: (state, action) => {
+      const { payload: index } = action;
+      state[index].quantity = 0;
+    },
   },
 });
 
-export const { incrementQuantity, decrementQuantity } = itemsSlice.actions;
+export const { incrementQuantity, decrementQuantity, resetQuantity } = itemsSlice.actions;
 
 export default itemsSlice.reducer;

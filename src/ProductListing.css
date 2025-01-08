@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -22,6 +23,7 @@ html, body {
   a {
     color: #fff;
   }
+
   a:hover {
     color: #aaffb1;
   }
@@ -33,6 +35,7 @@ html, body {
 
 .group {
   margin-top: 2vh;
+
   .title {
     font-size: 18px;
     font-weight: bold;
