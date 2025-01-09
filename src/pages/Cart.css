@@ -14,13 +14,17 @@
     margin: 1rem;
     padding: 1rem;
     width: 20rem;
-    height: 12rem;
+    height: 23rem;
     border: 1px solid #aa8b78;
     border-radius: 5px;
     background-color: #f5e8e0;
     font-size: 15px;
     font-weight: normal;
     text-align: center;
+
+    .name, .cost {
+      font-weight: bold;
+    }
 
     button {
       padding: 0.2rem 1rem 0.2rem 1rem;
@@ -31,7 +35,6 @@
       width: 10rem;
       height: 10rem;
       object-fit: cover;
-      float: left;
     }
 
     .delete {

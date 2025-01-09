@@ -1,7 +1,7 @@
-import Landing from './Landing'
-import ProductListing from './ProductListing'
+import Landing from './pages/Landing'
+import ProductListing from './pages/ProductListing'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Cart from './Cart'
+import Cart from './pages/Cart'
 
 function App() {
   return (

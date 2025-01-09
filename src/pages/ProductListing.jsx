@@ -1,7 +1,7 @@
 import './ProductListing.css'
 import { useSelector, useDispatch } from "react-redux";
-import { incrementQuantity } from "./itemsSlice";
-import Navbar from './Navbar'
+import { incrementQuantity } from "../itemsSlice";
+import Navbar from '../components/Navbar'
 
 function ProductListing() {
   const items = useSelector((state) => state.items);
@@ -32,9 +32,10 @@ function ProductListing() {
             <div className="products">
               {groupedItems[key].map((item, index) => (
                 <div className="product" key={index}>
+                  <div className="name">{item.name}</div>
                   <img src={item.img}></img>
-                  <div>{item.name}</div>
-                  <div>{item.cost} $</div>
+                  <div className="description">{item.description}</div>
+                  <div className="cost">{item.cost}$</div>
                   <button onClick={() => handleAddToCart(key, index)}>Add to Cart</button>
                 </div>
               ))}

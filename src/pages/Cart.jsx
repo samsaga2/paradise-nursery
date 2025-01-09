@@ -1,8 +1,8 @@
 import './Cart.css'
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { incrementQuantity, decrementQuantity, resetQuantity } from "./itemsSlice";
-import Navbar from './Navbar'
+import { incrementQuantity, decrementQuantity, resetQuantity } from "../itemsSlice";
+import Navbar from '../components/Navbar'
 
 function Cart() {
   const items = useSelector((state) => state.items);
@@ -51,15 +51,18 @@ function Cart() {
             <div className="products">
               {groupedItems[key].map((item, index) => (
                 <div className="cart_product" key={index}>
+                  <div className="name">{item.name}</div>
                   <img src={item.img}></img>
-                  <div>{item.name}</div>
-                  <div>{item.cost} $</div>
-                  <div>
-                    <button onClick={() => handleRemoveFromCart(key, index)}>-</button>
-                    {item.quantity}
-                    <button onClick={() => handleAddToCart(key, index)}>+</button>
+                  <div className="buy">
+                    <div className="cost">{item.cost} $</div>
+                    <div>
+                      <button onClick={() => handleRemoveFromCart(key, index)}>-</button>
+                      {item.quantity}
+                      <button onClick={() => handleAddToCart(key, index)}>+</button>
+                    </div>
+                    <button className="delete" onClick={() => handleDeleteFromCart(key, index)}>Delete</button>
                   </div>
-                  <button className="delete" onClick={() => handleDeleteFromCart(key, index)}>Delete</button>
+                  <div className="description">{item.description}</div>
                 </div>
               ))}
             </div>
