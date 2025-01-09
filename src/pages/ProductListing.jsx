@@ -36,7 +36,7 @@ function ProductListing() {
                   <img src={item.img}></img>
                   <div className="description">{item.description}</div>
                   <div className="cost">{item.cost}$</div>
-                  <button onClick={() => handleAddToCart(key, index)}>Add to Cart</button>
+                  <button disabled={item.quantity>0} onClick={() => handleAddToCart(key, index)}>Add to Cart</button>
                 </div>
               ))}
             </div>

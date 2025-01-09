@@ -52,6 +52,10 @@
       border: 1px solid #576b8f;
     }
 
+    button[disabled] {
+      background-color: #6e6e6e;
+    }
+
     img {
       width: 10rem;
       height: 10rem;
