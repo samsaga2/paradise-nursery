@@ -24,7 +24,7 @@ function ProductListing() {
 
   return (
     <>
-      <Navbar />
+      <Navbar to="/cart"/>
       <div className="groups">
         {Object.keys(groupedItems).map(key => (
           <div className="group" key={key}>

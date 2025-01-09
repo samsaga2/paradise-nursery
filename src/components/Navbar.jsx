@@ -2,7 +2,7 @@ import './Navbar.css'
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   const items = useSelector((state) => state.items);
 
   const totalItems = items.reduce((total, item) => {
@@ -13,7 +13,7 @@ function Navbar() {
     <nav className="navbar">
       <div><Link to="/"><img src="/paradise-nursery/logo.jpg" /></Link></div>
       <div>Plants</div>
-      <Link to="/cart">
+      <Link to={props.to}>
         <div className="cart">{totalItems}</div>
       </Link>
     </nav>

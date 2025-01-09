@@ -47,7 +47,7 @@ function Cart() {
 
   return (
     <>
-      <Navbar />
+      <Navbar to="/products"/>
       <div className="cart_groups">
         {Object.keys(groupedItems).map(key => (
           <div className="cart_group" key={key}>
