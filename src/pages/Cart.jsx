@@ -19,6 +19,10 @@ function Cart() {
     return acc;
   }, {});
 
+  const totalItems = items.reduce((total, item) => {
+    return total + item.quantity;
+  }, 0);
+
   const totalCost = items.reduce((total, item) => {
     return total + item.quantity * item.cost;
   }, 0);
@@ -74,7 +78,8 @@ function Cart() {
         ))}
 
         <div className="footer">
-          <div className="totalCost">Total {totalCost} $</div>
+          <div className="total">Total items {totalItems}</div>
+          <div className="total">Total cost {totalCost} $</div>
           <Link to="/products">
             <button>Continue shopping</button>
           </Link>
