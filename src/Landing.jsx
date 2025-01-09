@@ -4,32 +4,34 @@ import { Link } from "react-router-dom";
 function Landing() {
   return (
     <>
-      <header className="first_page">
+      <header className="landing">
         <div className="main_event">
-          <h1>Welcome To Paradise Nursery</h1>
-          <p>Where Green Meets Serenity</p>
-          <Link to="/products">
-            <button>Get Started</button>
-          </Link>
-        </div>
-        <div className="aboutus">
-          <p className="title">Welcome to Paradise Nursery: Your Green Oasis Awaits</p>
+          <div className="landing_name">
+            <h1>Welcome To Paradise Nursery</h1>
+            <p>Where Green Meets Serenity</p>
+            <Link to="/products">
+              <button>Get Started</button>
+            </Link>
+          </div>
+          <div className="aboutus">
+            <p className="title">Welcome to Paradise Nursery: Your Green Oasis Awaits</p>
 
-          <p>At Paradise Nursery, we believe in the power of plants to transform spaces and uplift spirits. Whether you're a seasoned gardener or a first-time plant parent, our wide selection of greenery is here to bring life, beauty, and tranquility into your home, office, or garden.</p>
+            <p>At Paradise Nursery, we believe in the power of plants to transform spaces and uplift spirits. Whether you're a seasoned gardener or a first-time plant parent, our wide selection of greenery is here to bring life, beauty, and tranquility into your home, office, or garden.</p>
 
-          <p className="title">Discover Nature’s Finest Creations</p>
-          <p>Step into our virtual nursery and explore a carefully curated collection of plants that suit every lifestyle and environment. From vibrant flowering plants to hardy succulents, air-purifying indoor plants to sprawling outdoor beauties, Paradise Nursery is your one-stop shop for all things green.</p>
+            <p className="title">Discover Nature’s Finest Creations</p>
+            <p>Step into our virtual nursery and explore a carefully curated collection of plants that suit every lifestyle and environment. From vibrant flowering plants to hardy succulents, air-purifying indoor plants to sprawling outdoor beauties, Paradise Nursery is your one-stop shop for all things green.</p>
 
-          <p className="title">Expert Guidance for Thriving Plants</p>
-          Not sure which plant suits your space? Worried about keeping your greenery healthy? Our plant experts are here to guide you every step of the way. With detailed care instructions, personalized recommendations, and a wealth of resources, we make plant care simple and rewarding.
+            <p className="title">Expert Guidance for Thriving Plants</p>
+            <p>Not sure which plant suits your space? Worried about keeping your greenery healthy? Our plant experts are here to guide you every step of the way. With detailed care instructions, personalized recommendations, and a wealth of resources, we make plant care simple and rewarding.</p>
 
-          <p className="title">Eco-Friendly Commitment</p>
-          At Paradise Nursery, we’re committed to sustainability. We source our plants responsibly and use eco-friendly packaging to ensure that every purchase you make supports the planet as well as your love for nature.
+            <p className="title">Eco-Friendly Commitment</p>
+            <p>At Paradise Nursery, we’re committed to sustainability. We source our plants responsibly and use eco-friendly packaging to ensure that every purchase you make supports the planet as well as your love for nature.</p>
 
-          <p className="title">Your Paradise, Delivered</p>
-          Transform your space with the click of a button. Our fast and reliable delivery service ensures that your chosen plants arrive fresh and ready to flourish. Start building your own green paradise today—because everyone deserves a little slice of nature’s beauty.
+            <p className="title">Your Paradise, Delivered</p>
+            <p>Transform your space with the click of a button. Our fast and reliable delivery service ensures that your chosen plants arrive fresh and ready to flourish. Start building your own green paradise today—because everyone deserves a little slice of nature’s beauty.</p>
 
-          <p>Explore our collection now and let Paradise Nursery bring the joy of greenery into your life.</p>
+            <p>Explore our collection now and let Paradise Nursery bring the joy of greenery into your life.</p>
+          </div>
         </div>
       </header>
     </>

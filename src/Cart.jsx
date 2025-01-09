@@ -71,7 +71,7 @@ function Cart() {
             <button>Continue shopping</button>
           </Link>
           <Link to="/checkout">
-            <button>Checkout</button>
+            <button onClick="javascript:alert('Thanks for shopping!')">Checkout</button>
           </Link>
         </div>
       </div>

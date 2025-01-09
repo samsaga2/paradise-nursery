@@ -1,30 +1,49 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.first_page {
+.landing {
+  background-image: url("/landing_background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; 
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10vw;
-  margin: 10vw;
+  align-items: center;
 }
 
 .main_event {
-  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  width: 90%;
+}
+
+.landing_name {
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 30px;
+  text-align: center; 
+  gap: 20px; 
 }
 
+
 .aboutus {
+  width: 60%;
   text-align: justify;
-  .title {
-    font-weight: bold;
-    margin-top: 2vh;
-  }
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.aboutus .title {
+  font-weight: bold;
+  margin-top: 2vh;
+  color: #fff;
+}
+
+.aboutus p {
+  color: #ddd;
 }
