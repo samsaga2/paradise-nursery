@@ -19,8 +19,8 @@ function Cart() {
     return acc;
   }, {});
 
-  const totalItems = items.reduce((total, item) => {
-    return total + item.quantity;
+  const totalCost = items.reduce((total, item) => {
+    return total + item.quantity * item.cost;
   }, 0);
 
   const handleAddToCart = (key, index) => {
@@ -70,6 +70,7 @@ function Cart() {
         ))}
 
         <div className="footer">
+          <div className="totalCost">Total {totalCost} $</div>
           <Link to="/products">
             <button>Continue shopping</button>
           </Link>
