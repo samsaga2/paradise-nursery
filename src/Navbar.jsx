@@ -11,11 +11,11 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div><Link to="/"><img src="/logo.jpg"/></Link></div>
+      <div><Link to="/"><img src="/logo.jpg" /></Link></div>
       <div>Plants</div>
-      <div className="cart">
-        <Link to="/cart">{totalItems}</Link>
-      </div>
+      <Link to="/cart">
+        <div className="cart">{totalItems}</div>
+      </Link>
     </nav>
   )
 }
