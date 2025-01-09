@@ -41,6 +41,10 @@ function Cart() {
     dispatch(resetQuantity(item_index));
   };
 
+  const handleCheckout = () => {
+    alert("Thanks for shopping!");
+  };
+
   return (
     <>
       <Navbar />
@@ -74,9 +78,7 @@ function Cart() {
           <Link to="/products">
             <button>Continue shopping</button>
           </Link>
-          <Link to="/checkout">
-            <button onClick="javascript:alert('Thanks for shopping!')">Checkout</button>
-          </Link>
+          <button onClick={handleCheckout}>Checkout</button>
         </div>
       </div>
     </>
