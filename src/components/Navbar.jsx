@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div><Link to="/"><img src="/logo.jpg" /></Link></div>
+      <div><Link to="/"><img src="/paradise-nursery/logo.jpg" /></Link></div>
       <div>Plants</div>
       <Link to="/cart">
         <div className="cart">{totalItems}</div>
