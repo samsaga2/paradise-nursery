@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
 
   .title {
     font-size: 18px;
@@ -50,7 +51,7 @@
   margin-bottom: 1rem;
 
   button {
-    width: 60vw;
+    width: 20rem;
     color: white;
     background-color: green;
     border: 1px solid rgb(1, 66, 1);
